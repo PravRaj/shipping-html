@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Crew Details - Shipping</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- <img src="" alt=""> -->
+        <span class="d-none d-lg-block">Shipping <span>Logo</span></span>
+      </a>
+      
+    </div>
+
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active">Crew Details</li>
+    </ol>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>           
+
+          </ul>
+
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+  </header>
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="vessel-tracking.html">
+          <i class="bi bi-pin-map"></i>
+          <span>Vessel Tracking</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="crew-details.html">
+          <i class="bi bi-people"></i>
+          <span>Crew Details</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-archive"></i>
+          <span>Orders</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-clock-history"></i>
+          <span>History</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-person"></i>
+          <span>Customer</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-bell"></i>
+          <span>Notification</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </aside>
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Crew details</h1>     
+    </div>
+
+    <section class="section profile">
+      <div class="row">
+        <div class="col-xl-4">
+
+          <div class="card">
+            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+
+              <img src="assets/img/profile-img.png" alt="Profile" class="rounded-circle">
+              <h2>Praveen Raj</h2>
+              <p class="text-muted">Crew ID: 12345</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xl-8">
+
+          <div class="card">
+            <div class="card-body pt-3">
+              <ul class="nav nav-tabs nav-fill nav-tabs-bordered">
+
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#personal">Personal Details</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#assignments">Assignments</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#medical">Medical Records</button>
+                </li>
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active personal-details pt-3" id="personal">
+                  <div class="row">
+                    <div class="col-md-4"><span>Name:</span> Praveen Raj</div>
+                    <div class="col-md-4"><span>Age:</span> 32</div>
+                    <div class="col-md-4"><span>Nationality:</span> Canadian</div>
+                    <div class="col-md-4"><span>Contact:</span> (555) 123-4567</div>
+                    <div class="col-md-4"><span>Emergency Contact:</span> (555) 987-6543</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-4"><span>Safety Training:</span> Expires: 12/2024</div>
+                    <div class="col-md-4"><span>Medical Certification:</span> Expires: 08/2025</div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade assignments pt-3" id="assignments">
+                  <div class="row">
+                    <div class="col-md-4"><span>Ship:</span> Oceanic</div>
+                    <div class="col-md-4"><span>Role:</span> Engineer</div>
+                    <div class="col-md-4"><span>Date:</span> 01/2023 - 06/2023</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-4"><span>Ship:</span> Atlantic Star</div>
+                    <div class="col-md-4"><span>Role:</span> First Mate</div>
+                    <div class="col-md-4"><span>Date:</span> 07/2023 - Present</div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade medical pt-3" id="medical">
+                  <div class="row">
+                    <div class="col-md-4"><span>Last Check-up:</span> 09/2023</div>
+                    <div class="col-md-4"><span>Status:</span> Fit for duty</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>          
+    </section>
+
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/js/apexcharts.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

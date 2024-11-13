@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard - Shipping</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- <img src="" alt=""> -->
+          <span class="d-none d-lg-block">Shipping <span>Logo</span></span>
+        </a>
+      </div>
+
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Dashboard</li>
+      </ol>
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span>
+            </a>
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="vessel-tracking.html">
+            <i class="bi bi-pin-map"></i>
+            <span>Vessel Tracking</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="crew-details.html">
+            <i class="bi bi-people"></i>
+            <span>Crew Details</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-archive"></i>
+            <span>Orders</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-clock-history"></i>
+            <span>History</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-person"></i>
+            <span>Customer</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-bell"></i>
+            <span>Notification</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Dashboard</h1>
+      </div>
+
+      <section class="section dashboard">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row info-box">
+              <div class="col-xxl-3 col-md-3">
+                <div class="card info-card bx1">
+                  <div class="card-body">
+                    <h5 class="card-title">New Orders</h5>
+
+                    <div class="d-flex align-items-center">
+                      <div class="ps-0">
+                        <h6>105</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-3 col-md-3">
+                <div class="card info-card bx2">
+                  <div class="card-body">
+                    <h5 class="card-title">Process</h5>
+
+                    <div class="d-flex align-items-center">
+                      <div class="ps-0">
+                        <h6>60</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-3 col-md-3">
+                <div class="card info-card bx3">
+                  <div class="card-body">
+                    <h5 class="card-title">Delivery</h5>
+
+                    <div class="d-flex align-items-center">
+                      <div class="ps-0">
+                        <h6>15</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-3 col-md-3">
+                <div class="card info-card bx4">
+                  <div class="card-body">
+                    <h5 class="card-title">Arrived</h5>
+
+                    <div class="d-flex align-items-center">
+                      <div class="ps-0">
+                        <h6>30</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7">
+            <!-- Order Statistic -->
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Order Statistic</h5>
+                  <div id="traffic-overview"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <!-- Product Sale -->
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Forecast</h5>
+                  <div id="chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h5 class="card-title mb-4">Recent Shipment</h5>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body px-0">
+                <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Zip Code</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Product</th>
+                      <th scope="col">Updated</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">TRK998801</th>
+                      <td>99501</td>
+                      <td>10-11-2024</td>
+                      <td>Drone-x-pro</td>
+                      <td>Today</td>
+                      <td><span class="new">New</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">TRK998801</th>
+                      <td>99501</td>
+                      <td>10-11-2024</td>
+                      <td>Drone-x-pro</td>
+                      <td>Today</td>
+                      <td><span class="process">In Process</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">TRK998801</th>
+                      <td>99501</td>
+                      <td>10-11-2024</td>
+                      <td>Drone-x-pro</td>
+                      <td>Today</td>
+                      <td><span class="complete">Completed</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">TRK998801</th>
+                      <td>99501</td>
+                      <td>10-11-2024</td>
+                      <td>Drone-x-pro</td>
+                      <td>Today</td>
+                      <td><span class="complete">Completed</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">TRK998801</th>
+                      <td>99501</td>
+                      <td>10-11-2024</td>
+                      <td>Drone-x-pro</td>
+                      <td>Today</td>
+                      <td><span class="complete">Completed</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
