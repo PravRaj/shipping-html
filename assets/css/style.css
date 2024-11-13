@@ -894,3 +894,8 @@ span.process {
   font-weight: 600;
   margin-bottom: 0;
 }
+
+.card-icon {
+  font-size: 30px;
+  opacity: 0.5;
+}
