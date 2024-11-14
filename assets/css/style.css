@@ -855,7 +855,7 @@ span.process {
 }
 
 @media only screen and (max-width: 600px) {
-  .map {
-    margin-bottom: 1.5rem!important;
+  .activities {
+    margin-top: 1.5rem!important;
   }
 }
