@@ -4,10 +4,11 @@
 
   --theme-primary: #061E38;
   --theme-blue: #115CCE;
+  --theme-text: #838F9C;
   --theme-grey: #999999;
   --theme-black: #000000;
   --theme-bg: #f6f9ff;
-  --theme-font-primary: "Lato", sans-serif;
+  --theme-font-primary: "Inter", sans-serif;
   --theme-font-secondary: "Open Sans", sans-serif;
   
 }
@@ -15,7 +16,7 @@
 body {
   font-family: var(--theme-font-primary);
   background: var(--theme-bg);
-  color: #444444;
+  color: var(--theme-text);
 }
 
 a {
@@ -186,10 +187,12 @@ h6 {
 .card-title {
   padding: 20px 0 0 0;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--theme-primary);
-  font-family: var(--theme-font-secondary);
+  font-family: var(--theme-font-primary);
 }
+
+.info-card .card-title { font-family: var(--theme-font-secondary);}
 
 .card-title span {
   color: #899bbd;
@@ -588,7 +591,7 @@ h6 {
   align-items: center;
   font-family: var(--theme-font-secondary);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 300;
   color: #ffffff;
   transition: all ease-in-out .3s;
   padding: 10px 15px;
@@ -733,6 +736,7 @@ h6 {
 
 .dashboard .table thead th {
   border: 0;
+  color: #E0E0E0;
   font-size: 16px;
   font-weight: 400;
   padding: 15px 10px;
@@ -740,15 +744,17 @@ h6 {
 }
 
 .dashboard .table td { 
+  color: #828282;
   font-family: var(--theme-font-secondary);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 12px; 
   padding-bottom: 12px;
 }
 
 .dashboard .table td span {
   border-radius: 7px;
+  font-size: 14px;
   padding: 6px 12px;
 }
 
@@ -837,9 +843,9 @@ span.process {
 
 .info-card h6 {
   color: var(--theme-primary);
-  font-family: var(--theme-font-primary);
+  font-family: var(--theme-font-secondary);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0;
 }
 
