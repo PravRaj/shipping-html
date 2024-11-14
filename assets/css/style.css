@@ -853,3 +853,9 @@ span.process {
   font-size: 30px;
   opacity: 0.5;
 }
+
+@media only screen and (max-width: 600px) {
+  .map {
+    margin-bottom: 1.5rem!important;
+  }
+}
